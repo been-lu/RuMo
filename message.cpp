@@ -4,7 +4,9 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-#include<stdio.h>
+#include <stdio.h>
+
+#include "connect.h"
 
 int message_num;
 
