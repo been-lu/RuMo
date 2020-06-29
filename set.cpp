@@ -4,6 +4,9 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+#include "universe.h"
+
+
 Set::Set(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::Set)

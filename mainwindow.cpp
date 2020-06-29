@@ -4,12 +4,14 @@
 #include "message.h"
 #include "ui_message.h"
 
-#include"set.h"
-#include"ui_set.h"
+#include "set.h"
+#include "ui_set.h"
 
 #include <QtSql/QSqlDatabase>
 #include <QDebug>
 #include <QtSql/QSqlError>
+
+#include "connect.h"
 
 //新消息数量
 int messages;

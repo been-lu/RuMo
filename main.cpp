@@ -14,8 +14,3 @@ int main(int argc, char *argv[])
     return a.exec();
 }
 
-//    QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");
-//    db.setHostName("localhost"); //数据库服务器IP
-//    db.setUserName("root"); //数据库用户名
-//    db.setPassword("1234"); //数据库密码
-
