@@ -45,8 +45,6 @@ message::~message()
 void message::on_pushButton_clicked()
 {
     this->close();
-    MainWindow *w =new MainWindow(this);
-    w->show();
 }
 
 //阅读下一消息
