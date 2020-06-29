@@ -54,10 +54,6 @@ void message::on_pushButton_2_clicked()
         flag=0;
     }
 
-    //ui->textBrowser_2->append("abcd");
-    //ui->textBrowser_3->append("efg");
-
-
     if(messages_n < 0)
     {
         QMessageBox::about(NULL, "message!", " no more message!");
@@ -70,33 +66,15 @@ void message::on_pushButton_2_clicked()
         ui->textBrowser_3->clear();
 
         //载入下一条留言
-        ui->textBrowser_2->append("他人留言");
+        ui->textBrowser_2->append("我说：");
         QString temp;
         temp.sprintf("message_n=%d",messages_n);
         ui->textBrowser_2->append(temp);
         ui->textBrowser_2->append(words[messages_n]);
-        ui->textBrowser_3->append("你的回复");
+        ui->textBrowser_3->append("t他人留言");
     }
 
     messages_n--;
 }
 
-//消息回复
-void message::on_pushButton_3_clicked()
-{
-    //获取文本框中语句
-    QString temp =ui->textEdit->toPlainText();
 
-    //发给数据库
-
-
-    //显示回复提示
-    QMessageBox::about(NULL, "message!", "已回复");
-
-     void on_pushButton_2_clicked();
-
-
-
-
-
-}
