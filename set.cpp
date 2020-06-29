@@ -4,7 +4,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-#include "universe.h"
+#include "connect.h"
 
 
 Set::Set(QWidget *parent) :

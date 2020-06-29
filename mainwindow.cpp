@@ -14,11 +14,12 @@
 #include "connect.h"
 
 //新消息数量
-int messages;
+int messages_num ;
 
+//获取新消息数量（未读消息）
 void recieve_message()
 {
-   messages=1;
+   messages_num=1;
 }
 
 MainWindow::MainWindow(QWidget *parent)
@@ -33,25 +34,24 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-
+//message button
 void MainWindow::on_pushButton_clicked()
 {
    //询问服务器有无新消息
     recieve_message();
 
-   if(messages == 0)
+   if(messages_num == 0)
        QMessageBox::information(NULL, "message!", " no new message!",
                              QMessageBox::Yes, QMessageBox::Yes);
    else
     {
         //展开message界面
-        //this->hide();
         message *m = new message(this);
         m->show();
-
     }
 }
 
+//about button
 void MainWindow::on_pushButton_4_clicked()
 {
    //关于，版本信息
@@ -59,6 +59,7 @@ void MainWindow::on_pushButton_4_clicked()
                                       "Version: 0.0.1\n");
 }
 
+//set button
 void MainWindow::on_pushButton_5_clicked()
 {
     //展开设置界面

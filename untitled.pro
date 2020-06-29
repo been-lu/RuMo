@@ -25,8 +25,7 @@ HEADERS += \
     connect.h \
     mainwindow.h \
     message.h \
-    set.h \
-    universe.h
+    set.h
 
 FORMS += \
     mainwindow.ui \
