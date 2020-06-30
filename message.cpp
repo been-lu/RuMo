@@ -11,16 +11,14 @@
 //新消息数量
 extern int messages_num ;
 
-//假设也就这几个消息
-QString  words[10];
+//上面的显示，下面的添加
+QString show , add;
 
 //获取消息信息
 void get_messages()
 {
     //test
-    words[1]="hello";
-    words[0]="bye";
-
+    show="你好";
 };
 
 
@@ -29,6 +27,7 @@ message::message(QWidget *parent) :
     ui(new Ui::message)
 {
     ui->setupUi(this);
+    ui->label->setPixmap(QPixmap(":/mainpic/pic/message_bac.jpg"));
 }
 
 message::~message()
@@ -62,15 +61,14 @@ void message::on_pushButton_2_clicked()
     {
         //清空现有框
         ui->textBrowser_2->clear();
-        ui->textBrowser_3->clear();
+
 
         //载入下一条留言
         ui->textBrowser_2->append("我说：");
         QString temp;
-        temp.sprintf("messages_num=%d",messages_num);
-        ui->textBrowser_2->append(temp);
-        ui->textBrowser_2->append(words[messages_num]);
-        ui->textBrowser_3->append("t他人留言");
+       // temp.sprintf("messages_num=%d",messages_num);
+       // ui->textBrowser_2->append(temp);
+
     }
 
     messages_num--;

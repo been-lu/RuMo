@@ -2,5 +2,7 @@
     <qresource prefix="/mainpic">
         <file>pic/main_bac_pic.jpg</file>
         <file>pic/rumo_welcome.png</file>
+        <file>pic/sign_bac.jpg</file>
+        <file>pic/message_bac.jpg</file>
     </qresource>
 </RCC>

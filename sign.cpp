@@ -17,8 +17,9 @@ sign::sign(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    //更改框
+    //更改框并载入背景
     {
+        ui->label_3->setPixmap(QPixmap(":/mainpic/pic/sign_bac.jpg"));
         ui->lineEdit_2->setAlignment(Qt::AlignHCenter);
         ui->lineEdit_2->setPlaceholderText("请输入密码");
         ui->lineEdit_2->setEchoMode(QLineEdit::Password);//输入的时候就显示圆点
