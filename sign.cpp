@@ -19,32 +19,31 @@ sign::sign(QWidget *parent) :
 
     //更改框
     {
-        ui->setupUi(this);
         ui->lineEdit_2->setAlignment(Qt::AlignHCenter);
         ui->lineEdit_2->setPlaceholderText("请输入密码");
         ui->lineEdit_2->setEchoMode(QLineEdit::Password);//输入的时候就显示圆点
         ui->lineEdit->setAlignment(Qt::AlignHCenter);
         ui->lineEdit->setPlaceholderText("请输入用户名");
-       // connectMYSQL();
+//        connectMYSQL();
     }
 
 
-    QSqlDatabase db=QSqlDatabase::addDatabase("QMYSQL");
-    db.setHostName("192.168.1.102");
-    db.setUserName("root");
-    db.setPassword("88888888");
-    db.setDatabaseName("user");
-    if(db.open())
-        {
-            qDebug()<<"Database connected successfully!";
-           //createtable();
-            return;
-        }
-    else
-        {
-            qDebug()<<"Database connected failed!";
-            return;
-        }
+//    QSqlDatabase db=QSqlDatabase::addDatabase("QMYSQL");
+//    db.setHostName("192.168.1.102");
+//    db.setUserName("root");
+//    db.setPassword("88888888");
+//    db.setDatabaseName("user");
+//    if(db.open())
+//        {
+//            qDebug()<<"Database connected successfully!";
+//           //createtable();
+//            return;
+//        }
+//    else
+//        {
+//            qDebug()<<"Database connected failed!";
+//            return;
+//        }
 }
 
 sign::~sign()
@@ -74,8 +73,9 @@ void sign::on_pushButton_clicked()
     username=ui->lineEdit->text();
     password=ui->lineEdit_2->text();
 
+
     //
-    if(username=="")
+    if(ui->lineEdit->text().isEmpty())
     {
         QMessageBox::about(NULL,"message","用户名不能为空");
         return;
