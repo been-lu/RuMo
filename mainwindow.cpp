@@ -14,12 +14,12 @@
 #include "connect.h"
 
 //新消息数量
-int messages_num ;
+extern int messages_num ;
 
 //获取新消息数量（未读消息）
 void recieve_message()
 {
-   messages_num=1;
+   messages_num=2;
 }
 
 MainWindow::MainWindow(QWidget *parent)

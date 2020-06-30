@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+#include "sign.h"
 
 #include <QSqlDatabase>
 #include <QSqlQuery>
@@ -6,11 +7,15 @@
 #include <QSqlError>
 #include <QApplication>
 
+//public
+int messages_num;
+
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
+    sign s;
+    s.show();
     return a.exec();
 }
 

@@ -19,18 +19,21 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     message.cpp \
-    set.cpp
+    set.cpp \
+    sign.cpp
 
 HEADERS += \
     connect.h \
     mainwindow.h \
     message.h \
-    set.h
+    set.h \
+    sign.h
 
 FORMS += \
     mainwindow.ui \
     message.ui \
-    set.ui
+    set.ui \
+    sign.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
