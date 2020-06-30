@@ -33,10 +33,10 @@ void MySql::createtable()
     query->exec("insert into user value('root', 'root')");
 }
 
-
-bool MySql::loguser(QString name, QString passward)
+//登录
+bool MySql::loguser(QString name, QString password)
 {
-    QString str=QString("select * from user where name='%1' and passward='%2'").arg(name).arg(passward);
+    QString str=QString("select * from user where name='%1' and passward='%2'").arg(name).arg(password);
     query=new QSqlQuery;
     query->exec(str);
     query->last();
@@ -46,8 +46,8 @@ bool MySql::loguser(QString name, QString passward)
     return true;
 }
 
-
-bool MySql::signup(QString name,QString passward)
+//注册
+bool MySql::signup(QString name,QString password)
 {
     QString str=QString("select * from user where name='%1").arg(name);
     query=new QSqlQuery;
@@ -56,7 +56,7 @@ bool MySql::signup(QString name,QString passward)
     int record=query->at()+1;
     if(record!=0)
         return false;
-    str=QString("insert into user value('%1','%2')").arg(name).arg(passward);
+    str=QString("insert into user value('%1','%2')").arg(name).arg(password);
     bool ret=query->exec(str);
     return ret;
 }

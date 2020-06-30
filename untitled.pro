@@ -19,6 +19,7 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     message.cpp \
+    mysql.cpp \
     set.cpp \
     sign.cpp
 
