@@ -9,7 +9,8 @@
 
 QString username,password;
 
-
+//setEchoMode(QLineEdit::PasswordEchoOnEdit);
+//echoLineEdit->setEchoMode(QLineEdit::PasswordEchoOnEdit);
 
 sign::sign(QWidget *parent) :
     QMainWindow(parent),
