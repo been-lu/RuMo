@@ -15,6 +15,7 @@
 
 //新消息数量
 extern int messages_num ;
+extern QString username;
 
 //获取新消息数量（未读消息）
 void recieve_message()
@@ -27,6 +28,21 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    //第一次进入时欢迎
+    static int flag=1;
+    if(flag==1)
+    {
+        flag=0;
+        QMessageBox message(QMessageBox::NoIcon, "hello", "welcome!");
+        message.setIconPixmap(QPixmap(":/mainpic/pic/rumo_welcome.png"));
+        message.exec();
+    }
+
+    ui->label->setPixmap(QPixmap(":/mainpic/pic/main_bac_pic.jpg"));
+
+    ui->textBrowser->setText("hello!");
+    ui->textBrowser->append(username);
 }
 
 MainWindow::~MainWindow()

@@ -7,7 +7,8 @@
 #include "connect.h"
 #include "QMessageBox"
 
-QString username,password;
+QString username="root";
+QString password;
 
 
 sign::sign(QWidget *parent) :
@@ -15,6 +16,19 @@ sign::sign(QWidget *parent) :
     ui(new Ui::sign)
 {
     ui->setupUi(this);
+
+    //更改框
+    {
+        ui->setupUi(this);
+        ui->lineEdit_2->setAlignment(Qt::AlignHCenter);
+        ui->lineEdit_2->setPlaceholderText("请输入密码");
+        ui->lineEdit_2->setEchoMode(QLineEdit::Password);//输入的时候就显示圆点
+        ui->lineEdit->setAlignment(Qt::AlignHCenter);
+        ui->lineEdit->setPlaceholderText("请输入用户名");
+       // connectMYSQL();
+    }
+
+
     QSqlDatabase db=QSqlDatabase::addDatabase("QMYSQL");
     db.setHostName("192.168.1.102");
     db.setUserName("root");

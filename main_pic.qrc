@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/mainpic">
+        <file>pic/main_bac_pic.jpg</file>
+        <file>pic/rumo_welcome.png</file>
+    </qresource>
+</RCC>

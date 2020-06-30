@@ -45,3 +45,8 @@ QT += core gui sql
 QT += widgets
 QT += sql
 
+DISTFILES +=
+
+RESOURCES += \
+    main_pic.qrc
+

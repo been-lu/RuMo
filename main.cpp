@@ -14,8 +14,8 @@ int messages_num;
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    //sign s;
-    //s.show();
+//    sign s;
+//    s.show();
     MainWindow w;
     w.show();
     return a.exec();
