@@ -18,22 +18,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
-    message.cpp \
     mysql.cpp \
-    set.cpp \
     sign.cpp
 
 HEADERS += \
     connect.h \
     mainwindow.h \
-    message.h \
-    set.h \
     sign.h
 
 FORMS += \
     mainwindow.ui \
-    message.ui \
-    set.ui \
     sign.ui
 
 # Default rules for deployment.

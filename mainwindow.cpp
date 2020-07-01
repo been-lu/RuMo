@@ -1,11 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-#include "message.h"
-#include "ui_message.h"
 
-#include "set.h"
-#include "ui_set.h"
 
 #include <QtSql/QSqlDatabase>
 #include <QDebug>
@@ -44,27 +40,26 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-//view button
-void MainWindow::on_pushButton_clicked()
-{
-
-        //展开message界面
-        message *m = new message(this);
-        m->show();
-}
 
 //about button
 void MainWindow::on_pushButton_4_clicked()
 {
    //关于，版本信息
-    QMessageBox::about(NULL, "About", "Producer: 孤独的舞姬\t\n"
-                                      "Version: 0.0.1\n");
+
+    QMessageBox message(QMessageBox::NoIcon, "关于", "Producer: 孤独的舞姬\t\n"
+                                                      "Version: 0.0.1\n");
+    message.setIconPixmap(QPixmap(":/mainpic/pic/rumo_welcome.png"));
+    message.exec();
 }
 
-//set button
-void MainWindow::on_pushButton_5_clicked()
-{
-    //展开设置界面
-    Set *s =new Set(this);
-    s->show();
-}
+//local//刻沙
+
+
+
+//cloud//随云
+
+
+
+//听风//
+
+

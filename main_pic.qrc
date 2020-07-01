@@ -3,6 +3,10 @@
         <file>pic/main_bac_pic.jpg</file>
         <file>pic/rumo_welcome.png</file>
         <file>pic/sign_bac.jpg</file>
-        <file>pic/message_bac.jpg</file>
+        <file>pic/all.png</file>
+        <file>pic/guanyu.png</file>
+        <file>pic/kesha.png</file>
+        <file>pic/shuoyun.png</file>
+        <file>pic/tingfeng.png</file>
     </qresource>
 </RCC>
