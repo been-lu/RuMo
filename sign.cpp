@@ -16,35 +16,14 @@ sign::sign(QWidget *parent) :
     ui(new Ui::sign)
 {
     ui->setupUi(this);
-
-    //更改框并载入背景
     {
-        ui->label_3->setPixmap(QPixmap(":/mainpic/pic/sign_bac.jpg"));
         ui->lineEdit_2->setAlignment(Qt::AlignHCenter);
         ui->lineEdit_2->setPlaceholderText("请输入密码");
         ui->lineEdit_2->setEchoMode(QLineEdit::Password);//输入的时候就显示圆点
         ui->lineEdit->setAlignment(Qt::AlignHCenter);
         ui->lineEdit->setPlaceholderText("请输入用户名");
-//        connectMYSQL();
+        connectMYSQL();
     }
-
-
-//    QSqlDatabase db=QSqlDatabase::addDatabase("QMYSQL");
-//    db.setHostName("192.168.1.102");
-//    db.setUserName("root");
-//    db.setPassword("88888888");
-//    db.setDatabaseName("user");
-//    if(db.open())
-//        {
-//            qDebug()<<"Database connected successfully!";
-//           //createtable();
-//            return;
-//        }
-//    else
-//        {
-//            qDebug()<<"Database connected failed!";
-//            return;
-//        }
 }
 
 sign::~sign()
@@ -100,9 +79,6 @@ void sign::on_pushButton_2_clicked()
 {
     username=ui->lineEdit->text();
     password=ui->lineEdit_2->text();
-
-    //
-
     if(check_log(username,password))
     {
        QMessageBox::about(NULL,"message","啊啊啊！\n奇怪的东西进来了！");
@@ -115,5 +91,24 @@ void sign::on_pushButton_2_clicked()
         QMessageBox::about(NULL,"message!","99+errrors and 1warning");
         ui->lineEdit->clear();
         ui->lineEdit_2->clear();
+    }
+}
+
+void sign::connectMYSQL()
+{
+    QSqlDatabase db=QSqlDatabase::addDatabase("QMYSQL");
+    db.setHostName("localhost");
+    db.setUserName("root");
+    db.setPassword("88888888");
+    db.setDatabaseName("user");
+    if(db.open())
+    {
+        qDebug()<<"Database connected successfully!";
+        return;
+    }
+    else
+    {
+        qDebug()<<"Database connected failed!";
+        return;
     }
 }

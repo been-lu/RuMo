@@ -14,6 +14,7 @@ class sign : public QMainWindow
 public:
     explicit sign(QWidget *parent = nullptr);
     ~sign();
+    void connectMYSQL();
 
 private slots:
     void on_pushButton_clicked();
