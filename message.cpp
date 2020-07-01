@@ -8,19 +8,6 @@
 
 #include "connect.h"
 
-//新消息数量
-extern int messages_num ;
-
-//上面的显示，下面的添加
-QString show , add;
-
-//获取消息信息
-void get_messages()
-{
-    //test
-    show="你好";
-};
-
 
 message::message(QWidget *parent) :
     QMainWindow(parent),
@@ -44,34 +31,40 @@ void message::on_pushButton_clicked()
 //阅读下一消息
 void message::on_pushButton_2_clicked()
 {
-   //在第一次触发时
-    static int flag=1;
-    if(flag==1)
+
+    //上面的显示
+    QString show ;
     {
-        get_messages();
-        flag=0;
+       //获取下一条消息
+        show="你好！";
     }
 
-    if(messages_num < 0)
-    {
-        QMessageBox::about(NULL, "message!", " no more message!");
-        this->close();
-    }
-    else
-    {
-        //清空现有框
-        ui->textBrowser_2->clear();
+    //清空现有框
+    ui->textBrowser->clear();
+    ui->textEdit->clear();
 
+    //载入下一条留言
+    ui->textBrowser->setText(show);
 
-        //载入下一条留言
-        ui->textBrowser_2->append("我说：");
-        QString temp;
-       // temp.sprintf("messages_num=%d",messages_num);
-       // ui->textBrowser_2->append(temp);
-
-    }
-
-    messages_num--;
 }
 
 
+//评论
+void message::on_pushButton_3_clicked()
+{
+    //写在下面的
+    QString add;
+    //获取
+    add=ui->textEdit->toPlainText();
+
+    //添加
+    ui->textBrowser->append("###");
+    ui->textBrowser->append(add);
+    ui->textBrowser->append("###");
+    {
+        //还要发给数据库
+
+
+    }
+
+}

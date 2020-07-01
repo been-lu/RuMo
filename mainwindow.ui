@@ -27,7 +27,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>message</string>
+     <string>view</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
@@ -106,6 +106,12 @@
       <width>140</width>
       <height>60</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑 Light</family>
+      <pointsize>11</pointsize>
+     </font>
     </property>
    </widget>
    <widget class="QLabel" name="label">

@@ -13,15 +13,9 @@
 
 #include "connect.h"
 
-//新消息数量
-extern int messages_num ;
+
 extern QString username;
 
-//获取新消息数量（未读消息）
-void recieve_message()
-{
-   messages_num=2;
-}
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -41,7 +35,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->label->setPixmap(QPixmap(":/mainpic/pic/main_bac_pic.jpg"));
 
-    ui->textBrowser->setText("hello!");
+    ui->textBrowser->setText("欢迎!");
     ui->textBrowser->append(username);
 }
 
@@ -50,21 +44,13 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-//message button
+//view button
 void MainWindow::on_pushButton_clicked()
 {
-   //询问服务器有无新消息
-    recieve_message();
 
-   if(messages_num == 0)
-       QMessageBox::information(NULL, "message!", " no new message!",
-                             QMessageBox::Yes, QMessageBox::Yes);
-   else
-    {
         //展开message界面
         message *m = new message(this);
         m->show();
-    }
 }
 
 //about button
