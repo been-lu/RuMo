@@ -1,7 +1,11 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+#include "cloud.h"
+#include "ui_cloud.h"
 
+#include "shudong.h"
+#include "ui_shudong.h"
 
 #include <QtSql/QSqlDatabase>
 #include <QDebug>
@@ -70,10 +74,20 @@ void MainWindow::on_pushButton_4_clicked()
 
 
 //cloud//说云
+void MainWindow::on_pushButton_clicked()
+{
+    cloud *c=new cloud (this);
+    c->show();
+}
 
 
 
 //听风//
+void MainWindow::on_pushButton_2_clicked()
+{
+    shudong *s=new shudong(this);
+    s->show();
+}
 
 
 
@@ -82,5 +96,11 @@ void MainWindow::on_pushButton_4_clicked()
 
 
 //悦己
+
+
+
+
+
+
 
 

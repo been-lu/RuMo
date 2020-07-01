@@ -16,18 +16,24 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    cloud.cpp \
     main.cpp \
     mainwindow.cpp \
     mysql.cpp \
+    shudong.cpp \
     sign.cpp
 
 HEADERS += \
+    cloud.h \
     connect.h \
     mainwindow.h \
+    shudong.h \
     sign.h
 
 FORMS += \
+    cloud.ui \
     mainwindow.ui \
+    shudong.ui \
     sign.ui
 
 # Default rules for deployment.
