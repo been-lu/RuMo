@@ -36,7 +36,7 @@ void MySql::createtable()
 //登录
 bool MySql::loguser(QString name, QString password)
 {
-    QString str=QString("select * from user where name='%1' and passward='%2'").arg(name).arg(password);
+    QString str=QString("select * from user where name='%1' and password='%2'").arg(name).arg(password);
     query=new QSqlQuery;
     query->exec(str);
     query->last();

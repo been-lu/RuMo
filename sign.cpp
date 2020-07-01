@@ -17,6 +17,9 @@ sign::sign(QWidget *parent) :
 {
     ui->setupUi(this);
     {
+        ui->label_3->setPixmap(QPixmap(":/mainpic/pic/sign_bac.jpg"));
+        ui->pushButton->setStyleSheet("background:transparent;border-width:0;border-style:outset");
+        ui->pushButton_2->setStyleSheet("background:transparent;border-width:0;border-style:outset");
         ui->lineEdit_2->setAlignment(Qt::AlignHCenter);
         ui->lineEdit_2->setPlaceholderText("请输入密码");
         ui->lineEdit_2->setEchoMode(QLineEdit::Password);//输入的时候就显示圆点
@@ -74,6 +77,7 @@ void sign::on_pushButton_clicked()
         QMessageBox::about(NULL,"message!","用户名已存在！");
 
 }
+
 //登录
 void sign::on_pushButton_2_clicked()
 {
@@ -81,7 +85,7 @@ void sign::on_pushButton_2_clicked()
     password=ui->lineEdit_2->text();
     if(check_log(username,password))
     {
-       QMessageBox::about(NULL,"message","啊啊啊！\n奇怪的东西进来了！");
+       QMessageBox::about(NULL,"message","登陆成功！");
        this->close();
        MainWindow *w=new MainWindow (this);
        w->show();
@@ -93,6 +97,7 @@ void sign::on_pushButton_2_clicked()
         ui->lineEdit_2->clear();
     }
 }
+
 
 void sign::connectMYSQL()
 {

@@ -8,5 +8,10 @@
         <file>pic/kesha.png</file>
         <file>pic/shuoyun.png</file>
         <file>pic/tingfeng.png</file>
+        <file>pic/denglu.png</file>
+        <file>pic/sign_all.png</file>
+        <file>pic/zhuce.png</file>
+        <file>pic/yueji.png</file>
+        <file>pic/zengren.png</file>
     </qresource>
 </RCC>

@@ -11,7 +11,13 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>不要进来啊！</string>
+   <string>登录</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>300</width>
+    <height>270</height>
+   </size>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="pushButton">
@@ -19,12 +25,22 @@
      <rect>
       <x>50</x>
       <y>170</y>
-      <width>92</width>
-      <height>28</height>
+      <width>100</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="text">
-     <string>注册</string>
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="main_pic.qrc">
+      <normaloff>:/mainpic/pic/zhuce.png</normaloff>:/mainpic/pic/zhuce.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>30</height>
+     </size>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
@@ -32,12 +48,22 @@
      <rect>
       <x>258</x>
       <y>170</y>
-      <width>92</width>
-      <height>28</height>
+      <width>100</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="text">
-     <string>登录</string>
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="main_pic.qrc">
+      <normaloff>:/mainpic/pic/denglu.png</normaloff>:/mainpic/pic/denglu.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>30</height>
+     </size>
     </property>
    </widget>
    <widget class="QLabel" name="label">
@@ -86,6 +112,38 @@
      </rect>
     </property>
    </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>400</width>
+      <height>270</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>400</width>
+      <height>270</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>400</width>
+      <height>270</height>
+     </size>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label_3</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>pushButton_2</zorder>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>lineEdit</zorder>
+   <zorder>lineEdit_2</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -99,6 +157,8 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="main_pic.qrc"/>
+ </resources>
  <connections/>
 </ui>
