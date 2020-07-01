@@ -17,16 +17,21 @@ sign::sign(QWidget *parent) :
 {
     ui->setupUi(this);
     {
+        //载入图片并使按键无界且透明
         ui->label_3->setPixmap(QPixmap(":/mainpic/pic/sign_bac.jpg"));
         ui->pushButton->setStyleSheet("background:transparent;border-width:0;border-style:outset");
         ui->pushButton_2->setStyleSheet("background:transparent;border-width:0;border-style:outset");
+
+        //框的修饰
         ui->lineEdit_2->setAlignment(Qt::AlignHCenter);
         ui->lineEdit_2->setPlaceholderText("请输入密码");
         ui->lineEdit_2->setEchoMode(QLineEdit::Password);//输入的时候就显示圆点
         ui->lineEdit->setAlignment(Qt::AlignHCenter);
         ui->lineEdit->setPlaceholderText("请输入用户名");
-        connectMYSQL();
+
     }
+    connectMYSQL();
+
 }
 
 sign::~sign()
@@ -53,11 +58,11 @@ bool check_sign(QString name, QString password)
 //注册
 void sign::on_pushButton_clicked()
 {
+
     username=ui->lineEdit->text();
     password=ui->lineEdit_2->text();
 
-
-    //
+    //检查//
     if(ui->lineEdit->text().isEmpty())
     {
         QMessageBox::about(NULL,"message","用户名不能为空");
@@ -83,6 +88,7 @@ void sign::on_pushButton_2_clicked()
 {
     username=ui->lineEdit->text();
     password=ui->lineEdit_2->text();
+
     if(check_log(username,password))
     {
        QMessageBox::about(NULL,"message","登陆成功！");
@@ -98,7 +104,7 @@ void sign::on_pushButton_2_clicked()
     }
 }
 
-
+//连接数据库
 void sign::connectMYSQL()
 {
     QSqlDatabase db=QSqlDatabase::addDatabase("QMYSQL");

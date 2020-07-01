@@ -29,11 +29,14 @@ MainWindow::MainWindow(QWidget *parent)
         message.exec();
     }
 
+    //载入背景图片
     ui->label->setPixmap(QPixmap(":/mainpic/pic/main_bac_pic.jpg"));
 
     ui->textBrowser->setText("欢迎!");
     ui->textBrowser->append(username);   
+
     //使无边界且透明
+    {
     ui->textBrowser->setStyleSheet("background:transparent;border-width:0;border-style:outset");
     ui->pushButton->setStyleSheet("background:transparent;border-width:0;border-style:outset");
     ui->pushButton_2->setStyleSheet("background:transparent;border-width:0;border-style:outset");
@@ -41,6 +44,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->pushButton_4->setStyleSheet("background:transparent;border-width:0;border-style:outset");
     ui->pushButton_5->setStyleSheet("background:transparent;border-width:0;border-style:outset");
     ui->pushButton_6->setStyleSheet("background:transparent;border-width:0;border-style:outset");
+    }
 
 }
 
@@ -70,5 +74,13 @@ void MainWindow::on_pushButton_4_clicked()
 
 
 //听风//
+
+
+
+//赠人
+
+
+
+//悦己
 
 
