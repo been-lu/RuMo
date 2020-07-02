@@ -13,5 +13,14 @@
         <file>pic/zhuce.png</file>
         <file>pic/yueji.png</file>
         <file>pic/zengren.png</file>
+        <file>pic/add.png</file>
+        <file>pic/chakan.png</file>
+        <file>pic/fanhui.png</file>
+        <file>pic/pinglun.png</file>
+        <file>pic/xianshi.png</file>
+        <file>pic/xiayitiao.png</file>
+        <file>pic/旧刻.png</file>
+        <file>pic/作石.png</file>
+        <file>pic/fabu.png</file>
     </qresource>
 </RCC>

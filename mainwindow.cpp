@@ -7,6 +7,9 @@
 #include "shudong.h"
 #include "ui_shudong.h"
 
+#include "widget.h"
+#include "ui_widget.h"
+
 #include <QtSql/QSqlDatabase>
 #include <QDebug>
 #include <QtSql/QSqlError>
@@ -70,6 +73,12 @@ void MainWindow::on_pushButton_4_clicked()
 }
 
 //local//刻沙
+void MainWindow::on_pushButton_3_clicked()
+{
+    Widget *w= new Widget(this);
+    w->show();
+}
+
 
 
 
@@ -96,6 +105,7 @@ void MainWindow::on_pushButton_2_clicked()
 
 
 //悦己
+
 
 
 

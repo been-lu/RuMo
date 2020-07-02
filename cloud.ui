@@ -10,20 +10,42 @@
     <height>400</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>400</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>600</x>
+     <x>620</x>
      <y>270</y>
-     <width>121</width>
-     <height>31</height>
+     <width>100</width>
+     <height>30</height>
     </rect>
    </property>
    <property name="text">
-    <string>发布留言</string>
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="main_pic.qrc">
+     <normaloff>:/mainpic/pic/fabu.png</normaloff>:/mainpic/pic/fabu.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>100</width>
+     <height>30</height>
+    </size>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_2">
@@ -31,12 +53,22 @@
     <rect>
      <x>470</x>
      <y>270</y>
-     <width>121</width>
-     <height>31</height>
+     <width>100</width>
+     <height>30</height>
     </rect>
    </property>
    <property name="text">
-    <string>返回</string>
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="main_pic.qrc">
+     <normaloff>:/mainpic/pic/fanhui.png</normaloff>:/mainpic/pic/fanhui.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>100</width>
+     <height>30</height>
+    </size>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit">
@@ -50,6 +82,8 @@
    </property>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="main_pic.qrc"/>
+ </resources>
  <connections/>
 </ui>

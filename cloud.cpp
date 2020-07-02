@@ -12,6 +12,8 @@ cloud::cloud(QWidget *parent) :
     ui(new Ui::cloud)
 {
     ui->setupUi(this);
+    ui->pushButton->setStyleSheet("background:transparent;border-width:0;border-style:outset");
+    ui->pushButton_2->setStyleSheet("background:transparent;border-width:0;border-style:outset");
     connect();
 }
 

@@ -17,24 +17,30 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     cloud.cpp \
+    dialog.cpp \
     main.cpp \
     mainwindow.cpp \
     mysql.cpp \
     shudong.cpp \
-    sign.cpp
+    sign.cpp \
+    widget.cpp
 
 HEADERS += \
     cloud.h \
     connect.h \
+    dialog.h \
     mainwindow.h \
     shudong.h \
-    sign.h
+    sign.h \
+    widget.h
 
 FORMS += \
     cloud.ui \
+    dialog.ui \
     mainwindow.ui \
     shudong.ui \
-    sign.ui
+    sign.ui \
+    widget.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
