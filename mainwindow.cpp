@@ -67,7 +67,7 @@ void MainWindow::on_pushButton_4_clicked()
    //关于，版本信息
 
     QMessageBox message(QMessageBox::NoIcon, "关于", "Producer: 孤独的舞姬\t\n"
-                                                      "Version: 0.0.1\n");
+                                                      "Version: 0.1.1\n");
     message.setIconPixmap(QPixmap(":/mainpic/pic/rumo_welcome.png"));
     message.exec();
 }

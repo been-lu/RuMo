@@ -22,5 +22,7 @@
         <file>pic/fabu.png</file>
         <file>pic/jiuke.png</file>
         <file>pic/zuoshi.png</file>
+        <file>pic/widget_bac.jpg</file>
+        <file>pic/dialog_bac.jpg</file>
     </qresource>
 </RCC>
