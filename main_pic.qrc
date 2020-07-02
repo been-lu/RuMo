@@ -19,8 +19,8 @@
         <file>pic/pinglun.png</file>
         <file>pic/xianshi.png</file>
         <file>pic/xiayitiao.png</file>
-        <file>pic/旧刻.png</file>
-        <file>pic/作石.png</file>
         <file>pic/fabu.png</file>
+        <file>pic/jiuke.png</file>
+        <file>pic/zuoshi.png</file>
     </qresource>
 </RCC>

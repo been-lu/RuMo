@@ -40,7 +40,7 @@
     </property>
     <property name="icon">
      <iconset resource="main_pic.qrc">
-      <normaloff>:/mainpic/pic/旧刻.png</normaloff>:/mainpic/pic/旧刻.png</iconset>
+      <normaloff>:/mainpic/pic/jiuke.png</normaloff>:/mainpic/pic/jiuke.png</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -96,7 +96,7 @@
     </property>
     <property name="icon">
      <iconset resource="main_pic.qrc">
-      <normaloff>:/mainpic/pic/作石.png</normaloff>:/mainpic/pic/作石.png</iconset>
+      <normaloff>:/mainpic/pic/zuoshi.png</normaloff>:/mainpic/pic/zuoshi.png</iconset>
     </property>
     <property name="iconSize">
      <size>
