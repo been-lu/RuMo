@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <dialog.h>
+#include<QMessageBox>
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }
 QT_END_NAMESPACE
@@ -22,7 +23,7 @@ private slots:
 
     void on_backbutton_2_clicked();
 
-    void on_textEdit_copyAvailable(bool b);
+
 
 private:
     Ui::Widget *ui;

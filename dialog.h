@@ -2,6 +2,13 @@
 #define DIALOG_H
 
 #include <QDialog>
+#include <qfiledialog.h>
+#include<QDir>
+#include<QList>
+#include<widget.h>
+#include<ui_widget.h>
+#include<QDebug>
+#include<QVector>
 
 namespace Ui {
 class Dialog;
@@ -18,16 +25,16 @@ public:
 private slots:
     void on_backbutton_clicked();
 
-    void on_textBrowser_anchorClicked(const QUrl &arg1);
-
     void on_pushButton3_clicked();
 
     void on_pushButton4_clicked();
 
-    void on_textEdit_copyAvailable(bool b);
+
 
 private:
     Ui::Dialog *ui;
+    QVector<QString> ve;
+    QVector<QString>::iterator li;//容器
 };
 
 #endif // DIALOG_H
