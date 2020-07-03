@@ -5,33 +5,6 @@ MySql::MySql()
 
 }
 
-void MySql::initsql()
-{
-    QSqlDatabase db=QSqlDatabase::addDatabase("QMYSQL");
-    db.setHostName("192.168.1.102");
-    db.setUserName("root");
-    db.setPassword("88888888");
-    db.setDatabaseName("user");
-    if(db.open())
-        {
-            qDebug()<<"Database connected successfully!";
-            createtable();
-            return;
-        }
-    else
-        {
-            qDebug()<<"Database connected failed!";
-            return;
-        }
-}
-
-void MySql::createtable()
-{
-    query=new QSqlQuery;
-
-    query->exec("create table user(name VARCHAR(30) PRIMARY KEY UNIQUE NOT NULL,password VARCHAR(30))");
-    query->exec("insert into user value('root', 'root')");
-}
 
 //登录
 bool MySql::loguser(QString name, QString password)

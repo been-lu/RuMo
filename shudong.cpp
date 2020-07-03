@@ -36,11 +36,6 @@ void shudong::on_pushButton_clicked()
     ui->tableView->setColumnWidth(1,80);
 }
 
-void shudong::on_pushButton_2_clicked()
-{
-
-}
-
 void shudong::on_pushButton_3_clicked()
 {
     this->close();

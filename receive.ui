@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>cloud</class>
- <widget class="QWidget" name="cloud">
+ <class>receive</class>
+ <widget class="QWidget" name="receive">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -25,11 +25,21 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>621</width>
+     <height>301</height>
+    </rect>
+   </property>
+  </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>600</x>
-     <y>270</y>
+     <x>660</x>
+     <y>20</y>
      <width>121</width>
      <height>31</height>
     </rect>
@@ -39,20 +49,20 @@
    </property>
    <property name="icon">
     <iconset resource="main_pic.qrc">
-     <normaloff>:/mainpic/pic/fabu.png</normaloff>:/mainpic/pic/fabu.png</iconset>
+     <normaloff>:/mainpic/pic/chakan.png</normaloff>:/mainpic/pic/chakan.png</iconset>
    </property>
    <property name="iconSize">
     <size>
-     <width>131</width>
-     <height>31</height>
+     <width>140</width>
+     <height>41</height>
     </size>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>470</x>
-     <y>270</y>
+     <x>660</x>
+     <y>290</y>
      <width>121</width>
      <height>31</height>
     </rect>
@@ -66,19 +76,9 @@
    </property>
    <property name="iconSize">
     <size>
-     <width>121</width>
-     <height>31</height>
+     <width>140</width>
+     <height>41</height>
     </size>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>20</y>
-     <width>691</width>
-     <height>241</height>
-    </rect>
    </property>
   </widget>
  </widget>

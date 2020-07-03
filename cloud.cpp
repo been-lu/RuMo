@@ -4,6 +4,7 @@
 #include <QDate>
 #include <QTime>
 #include <QDateTime>
+#include <QMessageBox>
 
 extern QString username;
 
@@ -12,8 +13,6 @@ cloud::cloud(QWidget *parent) :
     ui(new Ui::cloud)
 {
     ui->setupUi(this);
-    ui->pushButton->setStyleSheet("background:transparent;border-width:0;border-style:outset");
-    ui->pushButton_2->setStyleSheet("background:transparent;border-width:0;border-style:outset");
     connect();
 }
 
@@ -50,6 +49,9 @@ void cloud::on_pushButton_clicked()
     QSqlQuery query;
     query.exec(str);
     ui->lineEdit->clear();
+    QApplication::setQuitOnLastWindowClosed(false);
+    QMessageBox message(QMessageBox::NoIcon, "提示", "发布成功!");
+    message.exec();
 }
 
 void cloud::on_pushButton_2_clicked()

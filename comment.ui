@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>cloud</class>
- <widget class="QWidget" name="cloud">
+ <class>comment</class>
+ <widget class="QWidget" name="comment">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -25,10 +25,79 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>30</y>
+     <width>651</width>
+     <height>41</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>收信人:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>90</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>留言:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>70</y>
+     <width>651</width>
+     <height>181</height>
+    </rect>
+   </property>
+  </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>600</x>
+     <x>480</x>
+     <y>270</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="main_pic.qrc">
+     <normaloff>:/mainpic/pic/fanhui.png</normaloff>:/mainpic/pic/fanhui.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>131</width>
+     <height>31</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
      <y>270</y>
      <width>121</width>
      <height>31</height>
@@ -46,39 +115,6 @@
      <width>131</width>
      <height>31</height>
     </size>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_2">
-   <property name="geometry">
-    <rect>
-     <x>470</x>
-     <y>270</y>
-     <width>121</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="icon">
-    <iconset resource="main_pic.qrc">
-     <normaloff>:/mainpic/pic/fanhui.png</normaloff>:/mainpic/pic/fanhui.png</iconset>
-   </property>
-   <property name="iconSize">
-    <size>
-     <width>121</width>
-     <height>31</height>
-    </size>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>20</y>
-     <width>691</width>
-     <height>241</height>
-    </rect>
    </property>
   </widget>
  </widget>

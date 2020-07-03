@@ -11,10 +11,8 @@ class MySql
 {
 public:
     MySql();
-    void initsql();
-    void createtable();
-    bool loguser(QString name,QString passward);
-    bool signup(QString name,QString passward);
+    bool loguser(QString name,QString password);
+    bool signup(QString name,QString password);
 
 private:
     QSqlQuery *query;
